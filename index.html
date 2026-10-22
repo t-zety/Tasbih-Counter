@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cute Tasbih Counter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <h1>🌙 Tasbih Counter ✨</h1>
+  <div class="sub">Tap the bubble, count from 1 to 1000</div>
+
+  <div class="dhikr">
+    <div class="ar" id="ar">سُبْحَانَ ٱللّٰه</div>
+    <div class="tr" id="tr">SubhanAllah</div>
+  </div>
+  <div class="chips" id="dhikrs"></div>
+
+  <div class="wrap">
+    <svg viewBox="0 0 260 260" width="260" height="260">
+      <circle class="track" cx="130" cy="130" r="118" fill="none" stroke-width="12"/>
+      <circle class="bar" id="bar" cx="130" cy="130" r="118" fill="none" stroke-width="12" stroke-linecap="round" stroke-dasharray="741.4" stroke-dashoffset="741.4"/>
+    </svg>
+    <button id="tap" aria-label="Count">
+      <span id="count">0</span>
+      <span id="of">of 33</span>
+      <span class="face" id="face">(˶ᵔ ᵕ ᵔ˶)</span>
+    </button>
+  </div>
+
+  <div class="chips" id="goals"></div>
+  <div class="row">
+    <button class="btn" id="undo">↩︎ Undo</button>
+    <button class="btn" id="reset">🔄 Reset</button>
+    <button class="btn" id="mute">🔔 Sound On</button>
+  </div>
+  <div class="msg" id="msg"></div>
+  <div class="tot" id="tot"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
